@@ -24,7 +24,7 @@ Open and run the Jupyter notebooks:
 
 - `RAGWithLangraph.ipynb` - Main RAG implementation with LangGraph
 - `typesense.ipynb` - Typesense integration
-- `Mongo.ipynb` - MongoDB integration
+
 
 ## Project Structure
 
@@ -32,7 +32,6 @@ Open and run the Jupyter notebooks:
 RAG/
 ├── RAGWithLangraph.ipynb  # Main RAG implementation
 ├── typesense.ipynb        # Typesense examples
-├── Mongo.ipynb            # MongoDB examples
 ├── books.jsonl            # Sample data
 ├── test.txt               # Test data
 ├── requirements.txt       # Python dependencies
@@ -43,5 +42,6 @@ RAG/
 
 - **Agentic RAG**: Uses LangGraph for stateful multi-step reasoning
 - **Vector Search**: FAISS for efficient similarity search
-- **OpenAI Integration**: GPT-4 for generation with embeddings
+- **API Integration**:
+-  for generation with embeddings
 - **Conditional Retrieval**: Intelligent decision on when to retrieve documents
