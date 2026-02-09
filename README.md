@@ -1,22 +1,47 @@
-# RAG (Retrieval-Augmented Generation)
+# RAG with LangGraph
 
-A Retrieval-Augmented Generation project using Typesense for vector search and document retrieval.
+A Retrieval-Augmented Generation (RAG) system built with LangGraph and LangChain.
 
-## Files
+## Setup
 
-- **`typesense.ipynb`** — Jupyter notebook implementing the RAG pipeline with Typesense
-- **`books.jsonl`** — Dataset of books in JSON Lines format
-- **`test.txt`** — Test file for experimentation
+You're using Anaconda Python, so the packages are already installed! If you need to reinstall:
 
-## Getting Started
+```bash
+pip install -r requirements.txt
+```
 
-1. Install dependencies:
-   ```bash
-   pip install typesense jupyter
-   ```
-2. Start a Typesense server or connect to a hosted instance.
-3. Open `typesense.ipynb` and run the cells.
+## Environment Variables
 
-## License
+Create a `.env` file in the project root:
 
-MIT
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+## Usage
+
+Open and run the Jupyter notebooks:
+
+- `RAGWithLangraph.ipynb` - Main RAG implementation with LangGraph
+- `typesense.ipynb` - Typesense integration
+- `Mongo.ipynb` - MongoDB integration
+
+## Project Structure
+
+```
+RAG/
+├── RAGWithLangraph.ipynb  # Main RAG implementation
+├── typesense.ipynb        # Typesense examples
+├── Mongo.ipynb            # MongoDB examples
+├── books.jsonl            # Sample data
+├── test.txt               # Test data
+├── requirements.txt       # Python dependencies
+└── README.md              # This file
+```
+
+## Features
+
+- **Agentic RAG**: Uses LangGraph for stateful multi-step reasoning
+- **Vector Search**: FAISS for efficient similarity search
+- **OpenAI Integration**: GPT-4 for generation with embeddings
+- **Conditional Retrieval**: Intelligent decision on when to retrieve documents
